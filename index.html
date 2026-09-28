@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <meta name="theme-color" content="#0B5CAD" />
+  <meta name="theme-color" content="#0056D2" />
   <title>IEPCI Calc</title>
   <link rel="manifest" href="manifest.webmanifest" />
   <link rel="icon" href="icons/icon-192.png" />
@@ -13,10 +13,15 @@
 <body>
   <div class="app">
     <header class="topbar">
-      <div>
-        <div class="brand" id="brandName">IEPCI Calc</div>
-        <button type="button" class="project-name" id="projectName" title="Projects">Project</button>
+      <div class="brand-wrapper">
+        <img src="icons/IEPCI UK logo.png" alt="IEPCI UK Logo" class="brand-logo">
+        <div>
+          <div class="brand" id="brandName">IEPCI Calc</div>
+          <div class="brand-subtitle">Power System Engineering</div>
+          <button type="button" class="project-name" id="projectName" title="Projects">Project</button>
+        </div>
       </div>
+
       <span class="save-state" id="saveState">Saved</span>
     </header>
 
@@ -24,16 +29,27 @@
 
     <nav class="tabs" aria-label="Screens">
       <button type="button" class="tab" data-tab="network">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v5M12 8l-6 5M12 8l6 5M6 13v5M18 13v5"/><circle cx="12" cy="3" r="1.5"/><rect x="4" y="18" width="4" height="3"/><rect x="16" y="18" width="4" height="3"/></svg>
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 3v5M12 8l-6 5M12 8l6 5M6 13v5M18 13v5" />
+          <circle cx="12" cy="3" r="1.5" />
+          <rect x="4" y="18" width="4" height="3" />
+          <rect x="16" y="18" width="4" height="3" />
+        </svg>
         <span>Network</span></button>
       <button type="button" class="tab" data-tab="quick">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg>
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M13 2 4 14h7l-1 8 9-12h-7z" />
+        </svg>
         <span>IEC Quick</span></button>
       <button type="button" class="tab" data-tab="tools">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.5-.5-.5-2.5z"/></svg>
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.5-.5-.5-2.5z" />
+        </svg>
         <span>Tools</span></button>
       <button type="button" class="tab" data-tab="projects">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h7l2 2h9v11H3z"/></svg>
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M3 6h7l2 2h9v11H3z" />
+        </svg>
         <span>Projects</span></button>
     </nav>
   </div>

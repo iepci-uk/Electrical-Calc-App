@@ -4,9 +4,9 @@
 // (plus the icons in /icons and the name in manifest.webmanifest).
 // ============================================================
 export const BRAND = {
-  appName: 'IEPCI Calc',
+  appName: 'IEPCI Flux',
   company: 'Indian Electric & Power Control Inc.',
-  primaryColor: '#0B5CAD',
-  accentColor: '#F2A900',
+  primaryColor: '#0056D2',
+  accentColor: '#4DA3FF',
   footerNote: 'Results are for design guidance. Verify with a qualified engineer.',
 };
