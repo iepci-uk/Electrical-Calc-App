@@ -8,6 +8,7 @@ const FILES = [
   './js/ui/dom.js', './js/ui/quickView.js', './js/ui/networkView.js', './js/ui/toolsView.js',
   './js/ui/projectsView.js', './js/ui/report.js',
   './icons/icon-192.png', './icons/icon-512.png',
+  './icons/letterhead-header.png', './icons/letterhead-footer.png',
 ];
 
 self.addEventListener('install', (e) => {
